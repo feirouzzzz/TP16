@@ -1,0 +1,25 @@
+/* Styles globaux */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Typographie principale */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
+        "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #ffffff;
+
+    /* Amélioration du rendu des polices */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style pour le code */
+pre,
+code {
+    font-family: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+    font-size: 0.95em;
+}

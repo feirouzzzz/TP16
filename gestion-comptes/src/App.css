@@ -1,0 +1,46 @@
+/* Conteneur principal */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: #ffffff;
+  font-size: calc(12px + 1.8vmin);
+}
+
+/* Logo */
+.brand-logo {
+  height: 40vmin;
+  user-select: none;
+}
+
+/* Animation activée seulement si l’utilisateur l’autorise */
+@media (prefers-reduced-motion: no-preference) {
+  .brand-logo {
+    animation: rotate-logo 20s linear infinite;
+  }
+}
+
+/* Liens */
+.primary-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.primary-link:hover {
+  opacity: 0.85;
+}
+
+/* Animation */
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
